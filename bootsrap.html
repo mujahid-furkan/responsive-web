@@ -18,11 +18,27 @@
          height: 300px;
          
        }
+       .customer{
+         width: 150px;
+         height: 150px;
+         overflow: hidden;
+       }
+       .customer-card{
+        transition: .5s;
+       }
+       .customer-card:hover{
+        box-shadow: 3px 3px 10px black;
+        }
+        .slide-img{
+          height: 500px;
+          
+        }
+       
     </style>
 </head>
 <body>
    
-<div class=" container">
+<div class=" container-fluid">
 
     <!-- header section -->
     <header >
@@ -69,17 +85,52 @@
 
     <!-- main section -->
     <main>
+      <!-- slide section -->
+<section>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide h-75" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="2000">
+        <img src="https://www.websitebuilderinsider.com/wp-content/uploads/2017/02/How-to-Build-a-Website-The-Beginner%E2%80%99s-Guide.jpg" class="img-fluid  d-block w-100 slide-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-white font-weight-bold">Web Development</h5>
+          <p class="text-white font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis recusandae perferendis maxime voluptatem molestiae aliquid obcaecati dolor nobis odio.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://www.hostgator.com/blog/wp-content/uploads/2018/03/how-to-make-a-website-mobile-friendly.jpg" class="d-block img-fluid d-block w-100 slide-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-white font-weight-bold" >Grapics Design</h5>
+          <p class="text-white font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis recusandae perferendis maxime voluptatem molestiae aliquid obcaecati dolor nobis odio.</p>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2018/07/A-Complete-SEO-Checklist-for-Website-Owners-760x400.png" class="d-block  img-fluid w-100 slide-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-white font-weight-bold">Degital Marketing</h5>
+          <p class="text-white font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit corporis recusandae perferendis maxime voluptatem molestiae aliquid obcaecati dolor nobis odio.</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
 
+
+</section>
 
 
 <!-- Services section -->
-      <section>
-        <div class="title text-center my-4">
-          <h2 class="font-weight-bolder ">Services</h2>
+      <section class="bg-light p-3">
+        <div class="title text-center mb-5">
+          <h2 class="font-weight-bolder ">Our Services</h2>
         </div>
   
   
-          <div class="row row-cols-1 row-cols-md-3 g-4 text-sm-center d-flex justify-content-center">
+          <div class="row row-cols-1  row-cols-md-3 g-4 text-sm-center d-flex justify-content-center">
             
               <div class="col-lg-3 col-md-6 col-sm-10">
                 <div class="card h-100 ">
@@ -127,11 +178,11 @@
       </section>
      
 <!-- About Section -->
-    <section class="about-section mb-5">
+    <section class="about-section mb-5 bg-secondary">
       <div class="title text-center my-4">
-        <h2 class="font-weight-bolder ">About me</h2>
+        <h2 class="font-weight-bolder pt-3">About me</h2>
       </div>
-    <div class=" bg-dark text-white ">
+    <div class=" text-white ">
        
 
         <div class="row">
@@ -156,6 +207,174 @@
          </div>
 
     </section>
+
+
+    <!-- customer review section -->
+      <section>
+        <div class="customer-review bg-light text-center mb-3">
+          <div class="title text-center my-4">
+            <h2 class="font-weight-bolder pt-3">Customer Review</h2>
+          </div>
+
+          <div class="row container-fluid d-flex justify-content-center">
+            
+            <div class="col-lg-3  p-2 my-1 customer-card">
+              
+              <blockquote class="blockquote  border">
+                <img class="rounded-circle img-fluid customer p-2" src="https://image.shutterstock.com/image-vector/male-avatar-profile-picture-icon-260nw-1605417760.jpg" alt="">
+                <h5 class="pt-2">Mujahidul Islam</h5>
+              <p class=" text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, iure, possimus doloribus nisi quae quisquam odio ratione accusantium omnis perferendis voluptates fuga sequi nam accusamus.</p>
+          <footer class="blockquote-footer text-end p-3">
+            Mujahidul Islam
+          </footer>
+              </blockquote>
+              </div>
+              <div class="col-lg-3  p-2 my-1 customer-card">
+              
+                <blockquote class="blockquote border">
+                  <img class="rounded-circle img-fluid customer p-2" src="https://image.shutterstock.com/image-vector/male-avatar-profile-picture-icon-260nw-1605417760.jpg" alt="">
+                  <h5 class="pt-2">Osman Goni</h5>
+                <p class=" text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, iure, possimus doloribus nisi quae quisquam odio ratione accusantium omnis perferendis voluptates fuga sequi nam accusamus.</p>
+            <footer class="blockquote-footer text-end p-3">
+             Osman Goni
+            </footer>
+                </blockquote>
+              </div>
+                <div class="col-lg-3 p-2 my-1 customer-card">
+              
+                  <blockquote class="blockquote border">
+                    <img class="rounded-circle img-fluid customer p-2" src="https://image.shutterstock.com/image-vector/male-avatar-profile-picture-icon-260nw-1605417760.jpg" alt="">
+                    <h5 class="pt-2">Arafat Ahmed</h5>
+                  <p class=" text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, iure, possimus doloribus nisi quae quisquam odio ratione accusantium omnis perferendis voluptates fuga sequi nam accusamus.</p>
+              <footer class="blockquote-footer text-end p-3">
+                Arafat Ahmed
+              </footer>
+                  </blockquote>
+                </div>
+                  <div class="col-lg-3  p-2 my-1 customer-card">
+              
+                    <blockquote class="blockquote border">
+                      <img class="rounded-circle img-fluid customer p-2" src="https://image.shutterstock.com/image-vector/male-avatar-profile-picture-icon-260nw-1605417760.jpg" alt="">
+                      <h5 class="pt-2">Shakhawat Hossen</h5>
+                    <p class=" text-justify p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, iure, possimus doloribus nisi quae quisquam odio ratione accusantium omnis perferendis voluptates fuga sequi nam accusamus.</p>
+                <footer class="blockquote-footer text-end p-3">
+                  Shakhawat Hossen
+                </footer>
+                    </blockquote>
+                </div>
+              
+         
+        </div>
+      </section>
+
+
+      <section>
+        <div class="title text-center my-4">
+          <h2 class="font-weight-bolder pt-3">Our Team Member</h2>
+        </div>
+
+        <table class="table table-striped table-hover table-dark text-center">
+          <thead class="thead-secondary">
+            <tr>
+             
+              <th scope="col">Name</th>
+              <th scope="col">Skill</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td>osman Goni</td>
+              <td>Degital Marketing</td>
+              <td>21</td>
+            </tr>
+            <tr>
+            
+              <td>Arafat Ahmed</td>
+              <td>Seo Expart</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              
+              <td >Shakhawat Hossen</td>
+              <td>Grapics Designer</td>
+              <td>20</td>
+            </tr>
+            <tr>
+           
+              <td >Nayeem Hossen</td>
+              <td>Video Editor</td>
+              <td>23</td>
+            </tr>
+            <tr>
+              
+              <td >Farhan khan</td>
+              <td>App Developer</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <!-- Contact section -->
+      <section >
+       <div class="contact-section bg-secondary p-3 text-white mb-3 row">
+        <div class="title text-center my-4">
+          <h2 class="font-weight-bolder pt-3">Contact with us</h2>
+        </div>
+
+         <form action="" class="col-lg-8 col-sm-12 border-end was-validated px-5">
+           <div class="form-group my-3">
+             <label for="name" class="my-2">Full Name</label>
+            <input type="text" name="name" class="form-control" required >
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback ">Please enter your fullname</div>
+            </div>
+
+            <div class="form-group my-3">
+              <label for="email" class="my-2">Email</label>
+             <input type="email" name="email" class="form-control " required >
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback ">Please Enter Your Email</div>
+             </div>
+
+             <div class="form-group my-3">
+              <label for="subject" class="my-2">Subject</label>
+             <input type="text" name="subject" class="form-control" required >
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback ">Please Enter Your Subject</div>
+             </div>
+
+
+             <div class="form-group my-3">
+              <label for="fdback" class="my-2">Feedback</label>
+             <textarea cols="30" rows="10" name="fdback" id="validationTextarea" class="form-control" required></textarea>
+             <div class="valid-feedback"></div>
+            <div class="invalid-feedback ">Please Enter Your Feedback</div>
+            </div>
+             <div class="col-12">
+              <button class="btn btn-primary mb-2" type="submit">Submit Feedback</button>
+            </div>
+         </form>
+         
+         <div class="col-lg-4 col-sm-12 p-5 lh-1">
+         
+           <p>DM Group, Inc.</p>  
+           <p>appa, Suite 900 </p> 
+           <p>San Francisco, CA 94103</p> 
+           <p> P: (123) 456-7890</p>
+           
+           <h5> Mujahidul Islam</h5><br>
+           <p>first.last@example.com</p> 
+          
+           
+          
+         </div>
+       </div>
+       </section>
+
   </main>
   
 </div>
